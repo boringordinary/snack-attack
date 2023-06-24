@@ -232,7 +232,7 @@ function MobileHeader({
           className="font-bold text-center leading-none"
           as={isHome ? 'h1' : 'h2'}
         >
-          {title}
+          <img src="/logo-badge.svg" alt="logo" className="h-40 w-auto" />
         </Heading>
       </Link>
 
@@ -262,7 +262,7 @@ function DesktopHeader({
       role="banner"
       className={`${
         isHome
-          ? 'bg-primary/80 dark:bg-contrast/60 text-contrast dark:text-primary shadow-darkHeader'
+          ? 'text-contrast dark:text-primary shadow-darkHeader'
           : 'bg-contrast/80 text-primary'
       } ${
         !isHome && y > 50 && ' shadow-lightHeader'
@@ -270,7 +270,7 @@ function DesktopHeader({
     >
       <div className="flex gap-12">
         <Link className="font-bold" to="/" prefetch="intent">
-          {title}
+          <img src="/logo.svg" alt="logo" className="h-16 w-auto" />
         </Link>
         <nav className="flex gap-8">
           {/* Top level menu items */}

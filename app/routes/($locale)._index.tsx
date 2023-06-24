@@ -116,6 +116,8 @@ export default function Homepage() {
   // TODO: skeletons vs placeholders
   const skeletons = getHeroPlaceholder([{}, {}, {}]);
 
+  console.log(primaryHero, secondaryHero, tertiaryHero);
+
   return (
     <>
       {primaryHero && (
